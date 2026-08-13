@@ -619,9 +619,9 @@ a {
 
 .hero-right-desc {
   font-family: var(--font-sans);
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.82rem;
-  line-height: 1.42;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.05rem;
+  line-height: 1.55;
   margin-bottom: 1.5rem;
 }
 
@@ -2379,9 +2379,9 @@ a {
 }
 
 .contact-intro-text {
-  font-size: 1.02rem;
-  color: #2b2b2b;
-  line-height: 1.6;
+  font-size: 1.06rem;
+  color: #1e1e1e;
+  line-height: 1.62;
   margin-bottom: 28px;
   max-width: 580px;
 }
@@ -2389,8 +2389,8 @@ a {
 .contact-intro-text u {
   text-decoration: underline;
   text-underline-offset: 3px;
-  text-decoration-color: #555555;
-  font-weight: 500;
+  text-decoration-color: #333333;
+  font-weight: 600;
 }
 
 /* Custom Shaped Dark Card with Smooth Continuous Cutout */
@@ -2462,7 +2462,7 @@ a {
 }
 
 .contact-address-title {
-  font-size: 1.08rem;
+  font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.35;
   margin-bottom: 6px;
@@ -2470,8 +2470,9 @@ a {
 }
 
 .contact-hours-list {
-  font-size: 0.94rem;
-  color: #e5e0dc;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: #ede8e4;
   line-height: 1.5;
 }
 
@@ -2494,7 +2495,7 @@ a {
 }
 
 .contact-link-text {
-  font-size: 1.38rem;
+  font-size: 1.45rem;
   font-weight: 700;
   color: #ffffff;
   text-decoration: underline;
@@ -2509,7 +2510,8 @@ a {
 }
 
 .contact-link-email {
-  font-size: 1.22rem;
+  font-size: 1.28rem;
+  font-weight: 700;
   word-break: break-all;
 }
 
@@ -2538,10 +2540,10 @@ a {
 }
 
 .contact-form-prompt {
-  font-size: 1.02rem;
-  font-weight: 600;
-  color: #2e2e2e;
-  line-height: 1.4;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #151515;
+  line-height: 1.42;
   flex: 1;
 }
 
@@ -2571,19 +2573,20 @@ a {
   border: none;
   border-bottom: 2px solid #8e623a;
   background: transparent;
-  padding: 8px 4px 6px 4px;
+  padding: 9px 4px 7px 4px;
   font-family: var(--font-sans);
-  font-size: 0.98rem;
-  color: #222222;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111111;
   outline: none;
   transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
 .contact-input-underlined::placeholder,
 .contact-textarea-underlined::placeholder {
-  color: #9c9690;
-  font-weight: 500;
-  font-size: 0.96rem;
+  color: #8c8680;
+  font-weight: 600;
+  font-size: 1.02rem;
 }
 
 .contact-input-underlined:focus,
@@ -2615,8 +2618,8 @@ a {
   padding: 10px 24px;
   border-radius: 999px;
   font-family: var(--font-sans);
-  font-size: 0.92rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 700;
   letter-spacing: 0.04em;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
@@ -2630,8 +2633,8 @@ a {
 
 .contact-brand-signature {
   font-family: var(--font-serif);
-  font-size: 1.55rem;
-  font-weight: 600;
+  font-size: 1.7rem;
+  font-weight: 700;
   color: #8e623a;
   letter-spacing: -0.02em;
   display: inline-flex;

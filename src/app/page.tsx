@@ -400,7 +400,6 @@ export default function Home() {
             {/* Combined White Card */}
             <div className="hero-combined-card reveal">
               <div className="hero-left">
-                <img src="/assets/images/sega_emblem_transparent.png" className="hero-small-logo" alt="Sega Emblem" />
                 <h1 className="hero-title">{t.heroTitle}</h1>
                 <p className="hero-desc">{t.heroDesc}</p>
                 <Link href="/catalogues" className="btn-black">{t.heroExplore}</Link>
