@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-
+import Footer from "../components/Footer";
 import { useLanguage, Lang } from "../hooks/useLanguage";
 type Category = 'all' | 'shades' | 'blinds' | 'outdoor';
 
@@ -335,33 +335,8 @@ export default function CataloguesPage() {
 
       </main>
 
-      {/* Footer */}
-      <footer className="footer-banner">
-        <div className="container footer-container">
-          <div className="footer-grid">
-            <div className="brand-logo-group footer-logo">
-              <img className="brand-mark-img logo-img" src="/assets/images/sega_emblem_transparent.png" alt="Logo" />
-              <span className="brand-name">Seg<span className="logo-a">a</span> Blinds & Curtains</span>
-            </div>
-            <div className="footer-links">
-              <h4>{lang === 'en' ? 'Quick Links' : 'Enlaces Rápidos'}</h4>
-              <ul>
-                <li><Link href="/catalogues">{lang === 'en' ? 'Catalogues' : 'Catálogos'}</Link></li>
-                <li><Link href="/furniture-services">{lang === 'en' ? 'Furniture Services' : 'Servicio de Muebles'}</Link></li>
-                <li><Link href="/contact">{lang === 'en' ? 'Book a Visit' : 'Reservar Visita'}</Link></li>
-              </ul>
-            </div>
-            <div className="footer-contact">
-              <h4>{lang === 'en' ? 'Contact' : 'Contacto'}</h4>
-              <p>123 Design Avenue<br />Interior City, IC 10023</p>
-              <p>hello@segablinds.com</p>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <p>&copy; 2026 Seg<span className="logo-a">a</span> Blinds & Curtains. {lang === 'en' ? 'All rights reserved.' : 'Todos los derechos reservados.'}</p>
-          </div>
-        </div>
-      </footer>
+      {/* Extended Luxury Footer */}
+      <Footer lang={lang} />
     </>
   );
 }

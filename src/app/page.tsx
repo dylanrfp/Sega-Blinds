@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import CurtainIntroOverlay from "./components/CurtainIntroOverlay";
+import Footer from "./components/Footer";
 import { useLanguage, Lang } from "./hooks/useLanguage";
 
 const translations = {
