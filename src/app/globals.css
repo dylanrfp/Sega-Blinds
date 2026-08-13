@@ -540,11 +540,13 @@ a {
 
 .hero-desc {
   font-family: var(--font-sans);
-  font-size: 0.88rem;
-  line-height: 1.48;
-  color: #4a4a4a;
+  font-size: 1.05rem;
+  line-height: 1.62;
+  color: #383838;
   margin-bottom: 1.5rem;
-  max-width: 90%;
+  max-width: 92%;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .btn-black {
@@ -627,8 +629,10 @@ a {
   font-family: var(--font-sans);
   color: rgba(255, 255, 255, 0.95);
   font-size: 1.05rem;
-  line-height: 1.55;
+  line-height: 1.62;
   margin-bottom: 1.5rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .btn-white {
@@ -824,10 +828,13 @@ a {
 }
 
 .showroom-desc {
-  font-size: 16px;
+  font-size: 1.05rem;
+  line-height: 1.62;
   color: var(--text-muted);
   margin-bottom: 32px;
-  max-width: 480px;
+  max-width: 520px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .btn-primary {
@@ -893,9 +900,12 @@ a {
 }
 
 .furniture-desc {
-  font-size: 16px;
+  font-size: 1.05rem;
+  line-height: 1.62;
   color: var(--text-muted);
   margin-bottom: 28px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .link-cta {
@@ -1283,11 +1293,13 @@ a {
 }
 
 .catalogues-page-subtitle {
-  font-size: 1rem;
-  color: #555555;
+  font-size: 1.05rem;
+  color: #444444;
   max-width: 680px;
-  line-height: 1.6;
+  line-height: 1.62;
   margin-bottom: 32px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .catalogue-filter-tabs {
@@ -2114,10 +2126,12 @@ a {
 }
 
 .f-transform-info p {
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 1.05rem;
+  color: #444;
   line-height: 1.65;
-  max-width: 460px;
+  max-width: 480px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .f-transform-pair {
@@ -2412,10 +2426,12 @@ a {
 }
 
 .about-info p {
-  font-size: 1.02rem;
-  line-height: 1.75;
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: #333333;
   margin-bottom: 14px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .about-img-box {
@@ -2448,69 +2464,73 @@ a {
 .about-feature-card {
   background: #ffffff;
   padding: 32px 26px;
-  border-radius: 14px;
-  border: 1px solid rgba(0, 0, 0, 0.09);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
-  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-feature-card:hover {
-  transform: translateY(-5px);
-  border-color: #111111;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
 }
 
 .about-feature-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 12px;
-  background: rgba(0, 0, 0, 0.05);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  display: inline-flex;
 }
 
 .about-feature-card h3 {
-  font-size: 1.18rem;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
   font-weight: 700;
   color: #111111;
   margin-bottom: 10px;
-  letter-spacing: 0.01em;
 }
 
 .about-feature-card p {
-  font-size: 0.94rem;
-  color: #555555;
-  line-height: 1.65;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666666;
   margin: 0;
 }
 
-@media (max-width: 850px) {
-  .about-row,
-  .about-features-grid {
-    grid-template-columns: 1fr;
-  }
-  .about-row-reverse {
-    direction: ltr;
-  }
-  .about-hero-inner h1 {
-    font-size: 2.8rem;
-  }
-  .about-img-box {
-    height: 280px;
-  }
+.about-values-banner {
+  background-color: var(--accent-brown);
+  color: #ffffff;
+  padding: 50px 0;
+  margin-top: 60px;
 }
 
-/* ==========================================================================
-   Contact Page Styles
-   ========================================================================== */
-.contact-page {
-  position: relative;
-  background-color: #ffffff;
-  padding-top: 48px;
-  padding-bottom: 90px;
-  overflow: hidden;
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+
+.about-value-item h4 {
+  font-family: var(--font-bebas);
+  font-size: 2.8rem;
+  margin-bottom: 4px;
+  letter-spacing: 0.04em;
+}
+
+.about-value-item p {
+  font-size: 0.92rem;
+  opacity: 0.9;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Contact Page Dedicated Layout (Refined Match) */
+.contact-page-wrapper {
+  background-color: #FAF8F5;
+  min-height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 .contact-container {
@@ -2520,13 +2540,12 @@ a {
 }
 
 .contact-hero-section {
-  position: relative;
-  padding-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .contact-split-grid {
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: 1fr 1fr;
   gap: 54px;
   align-items: flex-start;
   position: relative;
@@ -2550,11 +2569,13 @@ a {
 }
 
 .contact-intro-text {
-  font-size: 1.06rem;
+  font-size: 1.05rem;
   color: #1e1e1e;
   line-height: 1.62;
   margin-bottom: 28px;
   max-width: 580px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .contact-intro-text u {
