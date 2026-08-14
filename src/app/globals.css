@@ -28,17 +28,21 @@
   --transition-smooth: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* Reset & Base */
+/* Reset & Base with Safari/WebKit Optimization */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
   font-size: 17.6px; /* 10% site-wide font size scale */
   scroll-behavior: smooth;
   overscroll-behavior-y: none;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -47,7 +51,48 @@ body {
   background-color: var(--bg-primary);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   overscroll-behavior-y: none;
+}
+
+/* Safari Input & Button Appearance Normalization */
+input, textarea, select {
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: inherit;
+}
+
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  background: none;
+  border: none;
+}
+
+/* Universal Justified Text Formatting for WebKit & Safari */
+.hero-desc,
+.hero-right-desc,
+.showroom-desc,
+.furniture-desc,
+.catalogues-page-subtitle,
+.product-detail-desc,
+.f-hero-text p,
+.f-bottom-cta-text p,
+.f-section-title p,
+.f-bento-overlay p,
+.f-bento-card-body p,
+.f-transform-info p,
+.about-info p,
+.about-feature-card p,
+.contact-intro-text {
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: left;
+  -webkit-hyphens: manual;
+  hyphens: manual;
+  word-break: normal;
 }
 
 .container {
@@ -60,15 +105,18 @@ body {
   padding: var(--section-padding);
 }
 
-img {
+img, video {
   max-width: 100%;
+  height: auto;
   display: block;
+  -webkit-user-drag: none;
 }
 
 a {
   text-decoration: none;
   color: inherit;
   transition: var(--transition-smooth);
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Sticky Header */
@@ -1389,6 +1437,7 @@ a {
   top: 12px;
   left: 12px;
   background: rgba(255, 255, 255, 0.94);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   color: #111111;
   font-size: 0.72rem;
@@ -1502,6 +1551,7 @@ a {
   top: 20px;
   left: 20px;
   background: rgba(17, 17, 17, 0.85);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   color: #fff;
   font-size: 0.85rem;
@@ -1918,6 +1968,8 @@ a {
   border: 1.5px solid rgba(212, 175, 55, 0.45);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transform: translateZ(0);
 }
 
 .f-sticky-cta-btn:hover {
@@ -3024,6 +3076,7 @@ a {
   right: 20px;
   left: auto;
   background: rgba(255, 255, 255, 0.96);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   padding: 14px 20px;
   border-radius: 14px;
@@ -3033,6 +3086,7 @@ a {
   align-items: center;
   gap: 16px;
   z-index: 1000;
+  transform: translateZ(0);
 }
 
 .contact-map-badge-logo {
@@ -3175,6 +3229,7 @@ a {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.88);
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   z-index: 9999;
   display: flex;
